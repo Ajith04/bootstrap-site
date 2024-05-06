@@ -13,9 +13,9 @@
 
     <div class="container">
         <div class="row d-flex justify-content-around bg-dark text-light p-2">
-            <div class="col d-flex justify-content-center">Branded products reduced up to 80%</div>
-            <div class="col d-flex justify-content-center">Worldwide Delivery</div>
-            <div class="col d-flex justify-content-center d-grid align-items-center">Call us : +94 526 8888</div>
+            <div class="col justify-content-center">Branded products reduced up to 80%</div>
+            <div class="col d-md-flex d-none justify-content-center">Worldwide Delivery</div>
+            <div class="col d-md-flex d-none d-flex justify-content-center d-grid align-items-center">Call us : +94 526 8888</div>
         </div>
 
         <nav class="navbar bg-body-tertiary">
@@ -57,7 +57,7 @@
                 </nav>
 
 
-                <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
+                <button class="btn btn-outline-success d-md-flex d-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -69,19 +69,78 @@
                         <div class="modal-body">
 
                           
-                            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                           
+                            <ul class="nav nav-pills mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link active w-75" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign in</button>
+                                  <button class="btn btn-primary" id="in" data-bs-toggle="pill" data-bs-target="#signin" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign in</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link active w-75" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</button>
+                                  <button class="btn btn-primary" id="up" data-bs-toggle="pill" data-bs-target="#signup" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</button>
                                 </li>
+                                
                               </ul>
                               <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">222</div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="in" tabindex="0">
+
+                                    <div class="col d-flex justify-content-center">
+                                    <h2>Sign In</h2>
+                                </div>
+
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                          <input type="email" placeholder="Enter email address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                                          <input type="password" placeholder="Enter password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1"><strong>Remember me</strong></label>
+                                        </div>
+                                        <div class="col d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-success">Sign In</button>
+                                    </div>
+                                      </form>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="up" tabindex="0">
+
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">First name</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Last name</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Email address</label>
+                                            <input type="mail" class="form-control" id="exampleInputPassword1">
+                                          </div>
+
+                                          <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+
+                                          <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Confirm password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                        
+                                        <div class="col d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-success">Sign Up</button>
+                                        </div>
+                                      </form>
+
+                                </div>
                               </div>
                             
 
@@ -103,30 +162,30 @@
         <img src="./assets/banner.webp" alt="" class="img-fluid">
 
         <div class="row mt-5">
-            <div class="col text-center">
+            <div class="col text-center d-md-flex d-none">
                 <img src="./assets/icon/icon1.png" alt="" class="img-fluid">
                 <p>100% AUTHENTIC</p>
             </div>
-            <div class="col text-center">
+            <div class="col text-center d-md-flex d-none">
                 <img src="./assets/icon/icon2.png" alt="" class="img-fluid">
                 <p>100% AUTHENTIC</p>
             </div>
-            <div class="col text-center">
+            <div class="col text-center d-md-flex d-none">
                 <img src="./assets/icon/icon3.png" alt="" class="img-fluid">
                 <p>100% AUTHENTIC</p>
             </div>
-            <div class="col text-center">
+            <div class="col text-center d-md-flex d-none">
                 <img src="./assets/icon/icon4.png" alt="" class="img-fluid">
                 <p>100% AUTHENTIC</p>
             </div>
-            <div class="col text-center">
+            <div class="col text-center d-md-flex d-none">
                 <img src="./assets/icon/icon5.png" alt="" class="img-fluid">
                 <p>100% AUTHENTIC</p>
             </div>
         </div>
 
         <div class="row mt-3">
-            <div class="card col-2">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2" >
                 <img src="./assets/product/product1.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Casual Outdoor</h5>
@@ -135,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="card col-2">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/product/product2.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Basketball</h5>
@@ -144,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="card col-2">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/product/product3.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Cricket ball</h5>
@@ -153,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="card col-2">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/product/product4.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Sneakers</h5>
@@ -162,7 +221,7 @@
                 </div>
             </div>
 
-            <div class="card col-2">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/product/product5.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tennis ball</h5>
@@ -170,7 +229,7 @@
                     <a href="#" class="btn btn-primary rounded-pill">Add to cart</a>
                 </div>
             </div>
-            <div class="card col-2">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/product/product6.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Rugby ball</h5>
@@ -205,7 +264,7 @@
           </div>
 
 <div class="row bg-dark mt-4 d-flex align-items-center p-5">
-    <div class="col">
+    <div class="col d-md-flex d-none">
         <img src="./assets/logo.jpg" alt="" class="img-fluid w-25">
     </div>
     <div class="col">

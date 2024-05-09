@@ -20,12 +20,12 @@
         </div>
     
         <!-- nav bar -->
-        <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg d-flex justify-content-around">
+        <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg justify-content-around">
 
           <!-- brand image -->
           <div>
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.jpg" alt="Bootstrap" width="30" height="24">
+                    <img src="./assets/logo.jpg" alt="Bootstrap" width="60" height="50">
                 </a>
               </div>
 
@@ -62,16 +62,18 @@
                     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                       <div class="offcanvas-header">
 
-                        <!-- off canvas brand image -->
-                        <div class="offcanvas-title d-xs-grid d-md-none">
-                          <img src="./assets/logo.jpg" alt="Bootstrap" width="30" height="24">
-                        </div>
+                        
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
 
+
+                      <!-- off canvas brand image -->
+                      <div class="offcanvas-title d-md-none d-flex justify-content-center">
+                        <img src="./assets/logo.jpg" alt="Bootstrap" width="200" height="200">
+                      </div>
                         <!-- off canvas menu -->
                       <div class="offcanvas-body">
-                          <ul class="navbar-nav d-xs-grid d-md-none">
+                          <ul class="navbar-nav d-md-none">
                             <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -90,7 +92,7 @@
                           </ul>
 
                           <!-- off canvas nav bar or modal button -->
-                          <button class="btn btn-outline-success d-xs-grid d-md-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
+                          <button class="btn btn-outline-success d-md-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
                       </div>
                     </div>
                   </div>
@@ -99,7 +101,7 @@
 
                   <!-- nav bar or modal button -->
                   <div>
-                <button class="btn btn-outline-success d-md-flex d-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
+                <button class="btn btn-outline-success d-lg-flex d-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
               </div>
               </nav>
               

@@ -12,52 +12,85 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="col">Branded products reduced up to 80%</div>
-            <div class="col">Worldwide Delivery</div>
-            <div class="col">Call us : +94 526 8888</div>
+        <div class="row bg-dark text-light">
+            <div class="col d-md-flex justify-content-center">Branded products reduced up to 80%</div>
+            <div class="col d-md-flex d-none justify-content-center">Worldwide Delivery</div>
+            <div class="col d-md-flex d-none justify-content-center">Call us : +94 526 8888</div>
         </div>
 
-        <nav class="navbar bg-body-tertiary">
-            <div class="container">
+        <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg d-flex justify-content-between">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/logo.jpg" alt="Bootstrap" width="30" height="24">
                 </a>
 
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Category</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Men</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Women</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Kids</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-danger fw-bold" href="#">Sale</a>
-                                </li>
-                            </ul>
-                        </div>
+                
+                    <div class="navbar">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Category</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Women</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-danger" aria-disabled="true"><strong>Kids</strong></a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </nav>
+                    
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                      <div class="offcanvas-header" id="">
+                        <div class="offcanvas-title">
+                          <img src="./assets/logo.jpg" alt="Bootstrap" width="30" height="24">
+                        </div>
+  
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div>
+                          <ul class="navbar-nav d-m-none">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Category</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Men</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-disabled="true">Women</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-danger" aria-disabled="true"><strong>Kids</strong></a>
+                            </li>
+                          </ul>
+
+
+                          <button class="btn btn-outline-success d-m-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
+
+
+                        </div>
+                      </div>
+                    </div>
+                
 
 
                 <button class="btn btn-outline-success d-md-flex d-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
+              
+
+                
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -67,6 +100,7 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                        
 
                           
                            
@@ -155,7 +189,7 @@
                       </div>
                     </div>
                   </div>
-            </div>
+           
            
         </nav>
 

@@ -12,18 +12,25 @@
 <body>
 
     <div class="container">
+      <!-- top bar -->
         <div class="row bg-dark text-light">
             <div class="col d-md-flex justify-content-center">Branded products reduced up to 80%</div>
             <div class="col d-md-flex d-none justify-content-center">Worldwide Delivery</div>
             <div class="col d-md-flex d-none justify-content-center">Call us : +94 526 8888</div>
         </div>
+    
+        <!-- nav bar -->
+        <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg d-flex justify-content-around">
 
-        <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg d-flex justify-content-between">
+          <!-- brand image -->
+          <div>
                 <a class="navbar-brand" href="#">
                     <img src="./assets/logo.jpg" alt="Bootstrap" width="30" height="24">
                 </a>
+              </div>
 
-                
+                <!-- menu bar -->
+                <div>
                     <div class="navbar">
                       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                         <span class="navbar-toggler-icon"></span>
@@ -40,26 +47,31 @@
                             <a class="nav-link" href="#">Men</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Women</a>
+                            <a class="nav-link" href="#">Women</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link text-danger" aria-disabled="true"><strong>Kids</strong></a>
+                            <a class="nav-link text-danger" href="#"><strong>Kids</strong></a>
                           </li>
                         </ul>
                       </div>
                     </div>
+                  
                     
+
+                    <!-- off canvas -->
                     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                      <div class="offcanvas-header" id="">
-                        <div class="offcanvas-title">
+                      <div class="offcanvas-header">
+
+                        <!-- off canvas brand image -->
+                        <div class="offcanvas-title d-xs-grid d-md-none">
                           <img src="./assets/logo.jpg" alt="Bootstrap" width="30" height="24">
                         </div>
-  
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
+
+                        <!-- off canvas menu -->
                       <div class="offcanvas-body">
-                        <div>
-                          <ul class="navbar-nav d-m-none">
+                          <ul class="navbar-nav d-xs-grid d-md-none">
                             <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -70,32 +82,35 @@
                               <a class="nav-link" href="#">Men</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" aria-disabled="true">Women</a>
+                              <a class="nav-link" href="#">Women</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-danger" aria-disabled="true"><strong>Kids</strong></a>
+                              <a class="nav-link text-danger" href="#"><strong>Kids</strong></a>
                             </li>
                           </ul>
 
-
-                          <button class="btn btn-outline-success d-m-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
-
-
-                        </div>
+                          <!-- off canvas nav bar or modal button -->
+                          <button class="btn btn-outline-success d-xs-grid d-md-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
                       </div>
                     </div>
+                  </div>
+                  
                 
 
-
+                  <!-- nav bar or modal button -->
+                  <div>
                 <button class="btn btn-outline-success d-md-flex d-none" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in / Sign up</button>
+              </div>
+              </nav>
               
 
                 
-
+<!-- modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
+                          <!-- modal title -->
                           <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in / Sign up</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -103,7 +118,7 @@
                         
 
                           
-                           
+                           <!-- modal sign in and sign up buttons -->
                             <ul class="nav nav-pills mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                   <button class="btn btn-primary" id="in" data-bs-toggle="pill" data-bs-target="#signin" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign in</button>
@@ -113,6 +128,8 @@
                                 </li>
                                 
                               </ul>
+
+                              <!-- modal sign in form -->
                               <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="in" tabindex="0">
 
@@ -141,8 +158,14 @@
 
 
                                 </div>
-                                <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="up" tabindex="0">
 
+
+                                <!-- modal sign up form -->
+                                <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="up" tabindex="0">
+              
+                                  <div class="col d-flex justify-content-center">
+                                    <h2>Sign Up</h2>
+                                      </div>
                                     <form>
                                         <div class="mb-3">
                                           <label for="exampleInputEmail1" class="form-label">First name</label>
@@ -182,10 +205,7 @@
 
                             
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -193,8 +213,11 @@
            
         </nav>
 
+        <!-- banner image -->
         <img src="./assets/banner.webp" alt="" class="img-fluid">
 
+
+<!-- row icons -->
         <div class="row mt-5">
             <div class="col d-flex flex-column justify-content-center align-items-center d-md-flex d-none">
                 <img src="./assets/icon/icon1.png" alt="" class="img-fluid">
@@ -218,6 +241,8 @@
             </div>
         </div>
 
+
+        <!-- row listings -->
         <div class="row mt-3">
             <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2" >
                 <img src="./assets/product/product1.webp" class="card-img-top" alt="...">
@@ -274,7 +299,13 @@
                 </div>
             </div>
             <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <img src="./assets/product/product6.webp" class="card-img-top" alt="...">
+                <div>
+                  <img src="./assets/product/product6.webp" class="card-img-top position-relative" alt="...">
+
+                  <!-- card overlay -->
+                  
+                </div>
+                <span class="text-bg-danger position-absolute mt-3 p-1">10% 0ffer</span>
                 <div class="card-body">
                     <h5 class="card-title">Rugby ball</h5>
                     <p class="card-text">LKR 850.00</p>
@@ -282,10 +313,12 @@
                     <a href="#" class="btn btn-info rounded-pill">Add to cart</a>
                     </div>
                 </div>
-            </div>
+            
         </div>
 
 
+
+        <!-- bottom slider -->
         <div id="carouselExample" class="carousel slide mt-4">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -309,21 +342,29 @@
             </button>
           </div>
 
+
+          <!-- footer -->
 <div class="row bg-dark mt-4 d-flex align-items-center p-5">
+
+  <!-- footer left logo -->
     <div class="col d-md-flex d-none">
         <img src="./assets/logo.jpg" alt="" class="img-fluid w-25">
     </div>
+
+    <!-- footer middle content -->
     <div class="col">
         <h1 class="text-secondary fs-3">GET TO KNOW US</h1>
         <div>
         <P class="text-light fs-7">About Us
             <br>
-            Contavt Us
+            Contact Us
             <br>
             Inquiry/Feedback
         </P>
     </div>
     </div>
+
+    <!-- footer right box -->
     <div class="col">
         <div class="alert alert-dark" role="alert">
             <H1 class="fs-3 text-light">NEWSLETTER SIGN UP</H1>
@@ -337,7 +378,7 @@
     
 </div>
 
-
+<!-- bottom bar -->
 <div class="row mt-1 bg-dark text-light">
     <div class="col d-flex justify-content-center align-items-center">
         <p>Copyright &copy 2024</p>
